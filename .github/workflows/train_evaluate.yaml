@@ -1,6 +1,6 @@
 name: CML & DVC
 on: [push]
-  jobs:
+jobs:
     train-and-report:
       runs-on: ubuntu-latest    
       steps:
