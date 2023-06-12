@@ -1,0 +1,27 @@
+schema: '2.0'
+stages:
+  build:
+    cmd: python src/scripts/train.py
+    deps:
+    - path: ./src/scripts/constant.py
+      md5: 3ad60e87d283ec64bfee82cc96ba2ee9
+      size: 494
+    - path: ./src/scripts/dataloader.py
+      md5: 00bb1538112f950df0568a65861967b8
+      size: 2575
+    - path: ./src/scripts/model.py
+      md5: ef1816d430866da955f3ddc9c46ab5a4
+      size: 1175
+    - path: ./src/scripts/train.py
+      md5: 513bc6a8b6252db63223ba25cbf4b9e2
+      size: 4987
+    - path: ./src/scripts/utils.py
+      md5: d41d8cd98f00b204e9800998ecf8427e
+      size: 0
+    outs:
+    - path: ./models/checkpoints/best-checkpoint.ckpt
+      md5: 549faa380055369ce940ff3174bf9527
+      size: 116012903
+    - path: results/metrics.json
+      md5: dbbd06ae2380e8b9ca30d5e79d197ae1
+      size: 98

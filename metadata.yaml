@@ -1,0 +1,4 @@
+author: korrawiz
+model_type: scikit-learn_0.23
+project_name: plant_disease_classification
+project_version: v0.1

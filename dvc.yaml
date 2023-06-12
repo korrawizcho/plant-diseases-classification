@@ -1,0 +1,14 @@
+stages:
+  build:
+    cmd: python src/scripts/train.py
+    deps:
+      - ./src/scripts/constant.py
+      - ./src/scripts/dataloader.py
+      - ./src/scripts/model.py
+      - ./src/scripts/train.py
+      - ./src/scripts/utils.py
+    outs:
+      - ./models/checkpoints/best-checkpoint.ckpt
+    metrics:
+      - results/metrics.json:
+          cache: false

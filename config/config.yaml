@@ -1,0 +1,19 @@
+dataloader_config:
+  data_path: "data/rice_leaf_diseases"
+  train_batch: 1
+  test_batch: 1
+  num_workers: 1
+  num_classes: 3
+
+
+model_config:
+  num_epochs: 1
+  hub_url: "SharanSMenon/swin-transformer-hub:main"
+  model_name: "swin_tiny_patch4_window7_224"
+  learning_rate: 0.01
+  weight_decay: 51e-4
+  step_per_epoch: 45000 // ${dataloader_config.train_batch}
+  checkpoint_path: "checkpoints"
+  checkpoint_name: "best-checkpoint"
+  csv_logger_path: "logs"
+  device: "cpu"
