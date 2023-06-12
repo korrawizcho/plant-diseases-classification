@@ -4,11 +4,11 @@ mlflow==2.3.2
 numpy==1.24.3
 pandas==1.5.3
 pydantic==1.10.9
-pytorch_lightning==2.0.2
-timm==0.6.12
-torch==2.0.0
-torchmetrics==0.11.4
-torchvision==0.15.1
-torchvision==0.15.2+cu117
+pytorch_lightning
+timm
+torch
+torchmetrics
+torchvision
+torchvision
 dvc[gdrive]
 
